@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css"/>
+    <title>Deovita Credencaidos</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Realizar o seu cadastro como:</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+
+        <div
+          class="progress-step progress-step-active"
+          data-title="Opção_Cadastro"
+        ></div>
+        <div class="progress-step" data-title="Contact"></div>
+        <div class="progress-step" data-title="ID"></div>
+        <div class="progress-step" data-title="Password"></div>
+        <div class="progress-step" data-title="Password"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="content">
+         
+          <div class="img" for="clinica">
+            <img src="download.png" alt="" class="responsive" for="clinica">
+            <div class="select">
+              <input type="radio" name="teste" id="clinica" style="margin-top: -5px;width:20px;">
+                <label for="clinica">Hospital ou Clínica </label> 
+                <div class="popover__wrapper">
+                  <i class="fa fa-info-circle" 
+                  aria-hidden="true" 
+                  style="
+                    margin-top: 6px;
+                    margin-left: 5px;
+                    opacity: 16%;">
+                  </i>
+                  <div class="popover__content__1">
+                    <p class="popover__message">Cadastra-se como uma clinica ou Hospital.</p>
+                  </div>
+                </div>
+                  
+            </div>
+            
+            
+          </div>
+          <div class="space" >WR</div>
+          <div class="img" for="medico">
+            <img src="download.png" alt="" class="responsive" for="medico">
+            <div class="select">
+              <input type="radio" name="teste" id="medico" style="margin-top: -5px;width:20px">
+                <label for="medico">Médico / Especialista </label> 
+                <div class="popover__wrapper">
+                  <i class="fa fa-info-circle" 
+                  aria-hidden="true" 
+                  style="
+                    margin-top: 6px;
+                    margin-left: 5px;
+                    opacity: 16%;">
+                  </i>
+                  <div class="popover__content">
+                    <p class="popover__message">Cadastra-se como Medico ou Especialista</p>
+                  </div>
+                </div>
+                  
+            </div>
+            
+            
+          </div>
+        </div>
+        
+        <div class="btns-group" style="margin-left:35%">
+          <a href="#" class="btn btn-next ">Proximo</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div class="input-group">
+          <label for="ID">National ID</label>
+          <input type="number" name="ID" id="ID" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
